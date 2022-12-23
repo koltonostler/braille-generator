@@ -1,0 +1,49 @@
+:root {
+	--primary: rgb(9, 97, 60);
+	--secondary: rgb(64, 99, 117);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+	margin: 1rem;
+}
+
+.braille-char {
+	margin: 1rem 0.25rem;
+	width: 50px;
+	height: 75px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.braille-on {
+	background-color: black;
+	border-radius: 50%;
+	margin: 5px;
+	width: 15px;
+	height: 15px;
+}
+
+.braille-off {
+	background-color: transparent;
+
+	width: 25px;
+	height: 25px;
+}
+
+.braille-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+}
