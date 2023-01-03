@@ -3,9 +3,9 @@
 
 ## About
 
-Braille Generator is the product of a challenge I gave myself to build a ReactJS application in only 1 day.  
+Braille Generator is the product of a challenge I gave myself to build a ReactJS/TypeScript application in only 1 day.  
 
-I utilized Next.js API Routes to build a dynamic API route to create a customer braille dictionary which the application uses to fetch in order to translate english letters and punctuation into uncontracted braille.  
+I utilized Next.js API Routes to build a dynamic API route to create a custom braille dictionary.  The application will fetch this api in order to translate english letters and punctuation into uncontracted braille.  
 
 
 
