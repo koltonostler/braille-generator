@@ -98,7 +98,7 @@ export default function Braille() {
 					break;
 			}
 
-			let brailleChar = await getCharInfo(`http://localhost:3000/api/brailleDict/${char}`);
+			let brailleChar = await getCharInfo(`https://braille.koltonostler.com/api/brailleDict/${char}`);
 			if (!brailleChar.error) {
 				setBrailleOutput((current) => [...current, brailleChar]);
 			}
