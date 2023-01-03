@@ -70,7 +70,6 @@ export default function Braille() {
 			if (char === ' ') {
 				char = 'space';
 			}
-			console.log(char);
 			// handle cases where char can't be searched in api due to url convention
 			if (char.indexOf('\\') >= 0) {
 				char = 'backslash';
@@ -98,7 +97,7 @@ export default function Braille() {
 					break;
 			}
 
-			let brailleChar = await getCharInfo(`https://braille-generator.vercel.app/api/brailleDict/${char}`);
+			let brailleChar = await getCharInfo(`https://braille.koltonostler.com/api/brailleDict/${char}`);
 			if (!brailleChar.error) {
 				setBrailleOutput((current) => [...current, brailleChar]);
 			}
